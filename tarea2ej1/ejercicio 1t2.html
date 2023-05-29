@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <div class="cuadrado">Clickea en un color para expandirlo al fondo</div>
+    <p>
+        <div class= "cuadrado1"> 
+            <button class = "boton1" id="rojo" onclick="cambiarcolor1()">Rojo</button> </div> 
+    <div class= "cuadrado2"> 
+            <button class = "boton2" id="verde" onclick="cambiarcolor2()">Verde</button> </div>
+    <div class= "cuadrado3"> 
+        <button class = "boton3" id="azul" onclick="cambiarcolor3()">Azul</button>
+    </p></div>
+    <script> 
+    function cambiarcolor1() {
+        let body = document.getElementsByTagName('body')[0];
+       body.style.backgroundColor = '#f82828'}
+    function cambiarcolor2() {
+        let body = document.getElementsByTagName('body')[0];
+       body.style.backgroundColor = '#3cff1a'}
+    function cambiarcolor3() {
+        let body = document.getElementsByTagName('body')[0];
+       body.style.backgroundColor = '#123eff'}
+    /* const cuadrado = document.getElementsByClassName('cuadrado')
+    verde.addEventListener('click', function(){
+        cuadrado.classList.add('verde');
+    })
+    azul.addEventListener('click', function(){
+        cuadrado.classList.add('azul');
+    })
+    const cuadrado1= document.getElementsByClassName('cuadrado1')[0];
+    cuadrado1.addEventListener('click', function(){
+        body.currentTarget.classList.toggle('activo')
+    })
+    */
+     </script>
+</body>
+</html>

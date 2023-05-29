@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="formfloating">
+        <h1><label for="floatingTextarea">Contador de caracteres</label>
+            <p>
+        <textarea class="form-control" onkeyup="arrancar(this)" id="floatingTextarea"></textarea> </p>
+    </h1>
+    <h2><p id="contador">0 caracteres</p></h2>
+    </div>
+      <script>
+        function arrancar(obj){
+    document.getElementById("contador").innerHTML = obj.value.length+' caracteres';
+}
+      </script>
+</body>
+</html>

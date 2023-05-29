@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <div class= "alumnos"> Alumnos</div>
+    <div>
+      
+        <div class="nombre">Nombres </div>
+    </div>
+    <div id='foo'></div>
+  <script>
+var alumnos = [
+
+  {
+
+    nombre: 'Juan Gomez',
+
+    nota: 7
+
+  }, {
+
+    nombre: 'Pedro Rodriguez',
+
+    nota: 4
+
+  }, {
+
+    nombre: 'Roxana García',
+
+    nota: 8
+
+  }, {
+
+    nombre: 'Luciano Lopez',
+
+    nota: 5
+
+  }, {
+
+    nombre: 'Fernanda Gimenez',
+
+    nota: 6
+
+  }, {
+
+    nombre: 'Florencia Martinez',
+
+    nota: 10
+
+  }, {
+
+    nombre: 'Raul Sanchez',
+
+    nota: 7
+
+  }, {
+
+    nombre: 'Sandra Figueroa',
+
+    nota: 8
+
+  }
+
+];
+
+
+let aprobados = alumnos.filter(alumnoaprobado => alumnoaprobado.nota >= 7)
+var foo = aprobados.map(function(bar){
+  return '<li>'+bar.nombre+' '+bar.nota+'</li>'
+})
+document.getElementById("foo").innerHTML = foo;
+console.log(aprobados);
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+div{
+    display: inline-flex;
+    flex-flow: row;
+}
+.boton1 {
+    width: 200px;          
+    height: 200px;         
+    background-color: #f82828;        
+    border: 5px solid #000;
+    margin-bottom: 5px; 
+  }
+.boton2 {
+    width: 200px;          
+    height: 200px;         
+    background-color: #3cff1a;        
+    border: 5px solid #000; 
+    margin-bottom: 5px;
+  }
+.boton3 {
+    width: 200px;          
+    height: 200px;         
+    background-color: #123eff;        
+    border: 5px solid #000;
+    margin-bottom: 5px; 
+  }
+body {
+    background-color: rgb(4, 111, 205);
+}
+body.activo {
+    background-color: #f82828;
+}
+.cuadrado1.activo {
+    background-color:aqua;
+ }
